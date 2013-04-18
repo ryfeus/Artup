@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Search Results</title>
+    <link type="text/css" href="jquery/css/ui-lightness/jquery-ui-1.10.0.custom.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery/js/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="jquery/js/jquery-ui-1.10.0.custom.min.js"></script>
+
+<style>
+
+
+@font-face {
+    font-family: "Arizonia";
+    src: url("Arizonia-Regular-OTF.otf") format("opentype");
+}
+
+
+.Button
+{
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em;
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+
+}
+
+.blue
+{
+	color: #d9eef7;
+	border: : solid 1px #0076a3;
+	background: : #0095cd;
+	background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+}
+
+.search
+{
+	position: absolute;
+	height: 40px;
+	width: 1000px;
+	font-size: 30px;
+	font-family: "Arizonia";
+}
+
+
+.portrait
+{
+	width:300px;
+	height: 450px;
+	position: absolute;
+	top: 150px;
+	border: 10px;
+	border-style:outset;
+	border-color: #0078a5;
+}
+
+.graphics
+{
+	width:450px;
+	height:450px;
+	position: absolute;
+	top: 150px;
+	left: 400px;
+	border: 10px;
+	border-style:outset;
+	border-color: #0078a5;
+}
+
+.anatomy
+{
+	width:550px;
+	height:200px;
+	position: absolute;
+	top: 150px;
+	left: 900px;
+	border: 10px;
+	border-style:outset;
+	border-color: #0078a5;
+}
+
+.general
+{
+	width:550px;
+	height:300px;
+	position: absolute;
+	top: 400px;
+	left: 900px;
+	border: 10px;
+	border-style:outset;
+	border-color: #0078a5;
+}
+
+.PortraitText
+{
+	position: absolute;
+	top: 520px;
+	left: 200px;
+	color: #ffffff;
+	font-size: 30px;
+	border-style: outset;
+	border-color: #0078a5;
+	background-color: #0078a5;
+
+}
+
+.GraphicsText
+{
+	position: absolute;
+	top: 520px;
+	left: 700px;
+	color: #ffffff;
+	font-size: 30px;
+	border-style: outset;
+	border-color: #0078a5;
+	background-color: #0078a5;
+
+}
+
+.AnatomyText
+{
+	position: absolute;
+	top: 280px;
+	left: 1320px;
+	color: #ffffff;
+	font-size: 30px;
+	border-style: outset;
+	border-color: #0078a5;
+	background-color: #0078a5;
+
+}
+
+.searchPosition
+{
+	position: absolute;
+	left: 1050px;
+	width: 200px;
+	height: 40px;
+	font-size: 20px;
+}
+</style>
+
+</head>
+  <body background="fzm-canvas-texture-03-800x791.jpg" scroll="yes">
+  	<input class = "search" type="text" name = "searchS" value="Leonardo Da Vinci">
+  	<button class = "Button searchPosition blue"  onClick="searchReq">Search</button>
+  	<img class = "portrait" src="DV_Portrait.jpg" alt="Portrait">
+  	<p class="PortraitText"> Portrait </p>
+  	<img class = "graphics" src="DV_Graphics.jpg" alt="graphics">
+  	<p class="GraphicsText"> Graphics </p>
+  	<img class = "anatomy" src="DV_Anatomy.jpg" alt="anatomy">
+  	<p class="AnatomyText"> Anatomy </p>
+  	<img class = "general" src="DV_General.jpg" alt="general">
+
+  </body>
+</html>
